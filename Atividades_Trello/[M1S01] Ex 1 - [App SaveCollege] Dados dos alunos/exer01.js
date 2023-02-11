@@ -23,7 +23,7 @@ var alunos = [
     {
         name: "Ricardo",
         height: 1.86,
-        age: 40,
+        age: 36,
         sex: "M",
         room: "Trindade"
     },
@@ -37,5 +37,5 @@ var alunos = [
 ];
 
 for (let i = 0; i < alunos.length; i++) {
-    console.log(`Name: ${alunos[i].name}, Height: ${alunos[i].height}, Age: ${alunos[i].age}, Sex: ${alunos[i].sex}, Room: ${alunos[i].room}`)
+    console.log(`Name: ${alunos[i].name}\nHeight: ${alunos[i].height}\nAge: ${alunos[i].age}\nSex: ${alunos[i].sex}\nRoom: ${alunos[i].room}`)
 }
