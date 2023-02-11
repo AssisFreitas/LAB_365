@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var DataBaseAlunos = [
+            {
+                name: "Maria",
+                altura: 1.71,
+                age: 25,
+                sex: "F",
+                room: "Trindade",
+                matematica: [6.2, 7.0, 10.0]
+            },
+            {
+                name: "José",
+                altura: 1.85,
+                age: 43,
+                sex: "M",
+                room: "Trindade",
+                matematica: [8.5, 8.0, 6.5]
+            },
+            {
+                name: "João",
+                altura: 1.55,
+                age: 22,
+                sex: "M",
+                room: "Trindade",
+                matematica: [10.0, 9.5, 9.2]
+            },
+            {
+                name: "Ricardo",
+                altura: 1.86,
+                age: 40,
+                sex: "M",
+                room: "Trindade",
+                matematica: [8.5, 5.5, 8.6]
+            },
+            {
+                name: "Joana",
+                altura: 1.65,
+                age: 40,
+                sex: "F",
+                room: "Trindade",
+                matematica: [10.0, 8.5, 9.5]
+            }
+        ];
+
+        function AlunoAprovado(media) {
+            media > 7.0 ? "Aluno Aprovado!" : "Aluno Reprovado."
+        }
+
+        var listaDeAlunos = []
+
+        function ListarAlunos() {
+            for (let i = 0; i < DataBaseAlunos.length; i++) {
+                listaDeAlunos.push(DataBaseAlunos[i].name)
+            }
+            return listaDeAlunos
+        }
+
+        var mediaDosAlunos = []
+        function MediaDosAlunos() {
+            let soma = 0;
+
+            for (let i = 0; i < DataBaseAlunos.length; i++) {
+
+                for (let j = 0; j < DataBaseAlunos[i].matematica[j]; j++) {
+
+                    soma += (DataBaseAlunos[i].matematica[j])
+                    var media = soma / 3;
+                }
+                soma = 0
+                console.log(`A média do aluno: ${DataBaseAlunos[i].name}, turma: ${DataBaseAlunos[i].room} é: ${media.toFixed(1)} ${AlunoAprovado(media)}`)
+                listaDeAlunos[i] = DataBaseAlunos[i].nome, media.toFixed(i)
+                AlunoAprovado(media)
+            }
+        }
+
+        ListarAlunos()
+        MediaDosAlunos()
+       
+        
+
+    </script>
+</body>
+
+</html>
