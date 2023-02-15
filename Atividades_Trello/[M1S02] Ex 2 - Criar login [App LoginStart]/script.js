@@ -8,11 +8,11 @@ const senha = "lab365";
 function entrar() {
   if (user.value == "" || pass.value == "") {
     val.innerHTML = "Usuário ou senha invalidos, tente novamente!"
+  } else if (user.value == usuario && pass.value == senha) {
+    window.location.href = "main.html"
   } else {
-    if (user.value == usuario && pass.value == senha) {
-      window.location.href = "main.html"
-    }
-
+    val.innerHTML = "Usuário ou senha invalidos, tente novamente!"
   }
 }
+
 
