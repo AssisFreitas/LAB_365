@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App LoginStart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h2>Registro</h2>
+    </div>
+
+    <div id="form" class="form">
+      <div class="form-control">
+        <label for="name">Nome</label>
+        <input type="text" autocomplete="disable" id="name" placeholder="Nome completo" />
+      </div>
+      <div class="form-control">
+        <label for="phone">Celular</label>
+        <input type="text" autocomplete="disable" id="phone" placeholder="Celular" />
+      </div>
+      <div class="form-control">
+        <label for="username">Usuário</label>
+        <input type="text" autocomplete="disable" id="username" placeholder="Digite seu Usuário" />
+      </div>
+
+      <div class="form-control">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite sua senha" />
+      </div>
+      
+      <button class="btn" onclick="registrar()">Registrar</button>
+
+      <div>
+        <p id="val"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+
+</html>
